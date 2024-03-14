@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Swadhin Maity Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/e0a3d1b59f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="image/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p> Data Analyst</p>
+                    <h1>Hi, I am <span>Swadhin</span> <br>Maity From Kolkata, IN</h1>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="image/20221201_124019.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am an Analytical Data Analyst proficient in SQL, Python, R, SAS and
+                            Tableau, seeking to apply my expertise in statistical analysis to
+                            support strategic business decision-making. Committed to optimizing
+                            operational processes and improving organizational efficiency.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming</span><br>Python,  R,  SQL<br>SPSS,  SAS</li>
+                                <li><span>Modeling</span><br>Linear Regression<br>Logistic Regression<br>KMean<br>Dbscan<br>Machine Learning & A.I</li>
+                                <li><span>DBMS</span><br>relational model<br>schema<br>Functional dependency<br>Data Structure & Algorithm</li>
+                                <li><span>Data Visualisation</span><br>Microsoft excel<br>Matplotlib<br>Tableau<br>PowerBI</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Matriculation</span><br>Year- 2017 <br>Board- WBBSE<br>Percentage- 89%</li>
+                                <li><span>Higher Secondary</span><br>Year- 2019 <br>Board-WBCHSE<br>Percentage- 76%</li>
+                                <li><span>B.Sc in Statistics</span><br>Year- 2019 to 2022<br>Midnapore College Autonomous, WB<br>Midnapore, WB, 721101<br>CGPA-8.12</li>
+                                <li><span>M.Sc in Applied Statistics</span><br>Year- 2022 to 2024<br>Maulana Abul kalam Azad University of
+                                    Technology, WB<br>Kalyani, WB, 741249<br>CGPA-9.04 (till 2nd semister)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Open To Work</span><br><br>Gained collective knowladge from<br>university projects and personal projects.</li>  
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>  
+                <div class="services-list">
+                    <div>
+                        <img src="image/1_nd5i1wSFa_EyfWNTpyD_Tw.jpg">
+                        <h2>Data cleaning with SQL</h2>
+                        <p>description</p>
+                        <a href="#">view</a>
+                    </div>
+                    <div>
+                        <img src="image/covid-19-1.jpg">
+                        <h2>covid data</h2>
+                        <p>description</p>
+                        <a href="#">view</a>
+                    </div>
+                    <div>
+                        <img src="image/tableau.jpg">
+                        <h2>tableau visualization</h2>
+                        <p>description</p>
+                        <a href="#">view</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="image/1_nd5i1wSFa_EyfWNTpyD_Tw.jpg">
+                        <div class="layer">
+                            <h3>SQL Data Cleaning</h3>
+                            <p>Description</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="image/covid-19-1.jpg">
+                        <div class="layer">
+                            <h3>Covid data</h3>
+                            <p>Description</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="image/tableau.jpg">
+                        <div class="layer">
+                            <h3>Tableau</h3>
+                            <p>Description</p>
+                            <a href="https://public.tableau.com/app/profile/swadhin.maity/viz/CovidDashboard_17098803189410/Dashboard1?publish=yes"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>swadhinmaity2001@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>8372963853</p>
+                        <div class="social-icon">
+                            <a href="https://www.linkedin.com/in/swadhin-maity-8b4962241/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/SwadhinMaity15"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FSWADHINMAITY404"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.facebook.com/swadhin.maity.1?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <a href="image/SWADHIN MAITY cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Swadhin. Made with <i class="fa-solid fa-heart"></i> by easy Tutorials </p>
+            </div>
+        </div>
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxoEXD1ctlbvaebyx4LdSsxHmqHRNARLOhcfhjyLAP1hJfSGpfjb2q-bEuPXEjGgVXg/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Massage Recived successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
